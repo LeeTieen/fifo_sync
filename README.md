@@ -1,2 +1,2 @@
 # fifo_sync
-To verify operation of FIFO Synchronous
+To verify a Synchronous FIFO buffer using SystemVerilog.
