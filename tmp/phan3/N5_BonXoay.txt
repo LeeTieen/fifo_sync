@@ -1,0 +1,119 @@
+CASE LL
+Mat can bang LL tai 30
+ROOT 30 [h=3, BF=-2]
+|   L--- 20 [h=2, BF=-1]
+|   |   L--- 10 [h=1, BF=0]
+|   |   R--- null
+|   R--- null
+Xoay phai tai 30; T2=null
+ROOT 20 [h=2, BF=0]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=1, BF=0]
+IsAVL=1
+CASE RR
+Mat can bang RR tai 10
+ROOT 10 [h=3, BF=2]
+|   L--- null
+|   R--- 20 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 30 [h=1, BF=0]
+Xoay trai tai 10; T2=null
+ROOT 20 [h=2, BF=0]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=1, BF=0]
+IsAVL=1
+CASE LR
+Mat can bang LR tai 30
+ROOT 30 [h=3, BF=-2]
+|   L--- 10 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 20 [h=1, BF=0]
+|   R--- null
+Xoay trai tai 10; T2=null
+Xoay phai tai 30; T2=null
+ROOT 20 [h=2, BF=0]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=1, BF=0]
+IsAVL=1
+CASE RL
+Mat can bang RL tai 10
+ROOT 10 [h=3, BF=2]
+|   L--- null
+|   R--- 30 [h=2, BF=-1]
+|   |   L--- 20 [h=1, BF=0]
+|   |   R--- null
+Xoay phai tai 30; T2=null
+Xoay trai tai 10; T2=null
+ROOT 20 [h=2, BF=0]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=1, BF=0]
+IsAVL=1
+Chen 1
+ROOT 1 [h=1, BF=0]
+Chen 2
+ROOT 1 [h=2, BF=1]
+|   L--- null
+|   R--- 2 [h=1, BF=0]
+Chen 3
+Mat can bang RR tai 1
+ROOT 1 [h=3, BF=2]
+|   L--- null
+|   R--- 2 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 3 [h=1, BF=0]
+Xoay trai tai 1; T2=null
+ROOT 2 [h=2, BF=0]
+|   L--- 1 [h=1, BF=0]
+|   R--- 3 [h=1, BF=0]
+Chen 4
+ROOT 2 [h=3, BF=1]
+|   L--- 1 [h=1, BF=0]
+|   R--- 3 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 4 [h=1, BF=0]
+Chen 5
+Mat can bang RR tai 3
+ROOT 3 [h=3, BF=2]
+|   L--- null
+|   R--- 4 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 5 [h=1, BF=0]
+Xoay trai tai 3; T2=null
+ROOT 2 [h=3, BF=1]
+|   L--- 1 [h=1, BF=0]
+|   R--- 4 [h=2, BF=0]
+|   |   L--- 3 [h=1, BF=0]
+|   |   R--- 5 [h=1, BF=0]
+Chen 6
+Mat can bang RR tai 2
+ROOT 2 [h=4, BF=2]
+|   L--- 1 [h=1, BF=0]
+|   R--- 4 [h=3, BF=1]
+|   |   L--- 3 [h=1, BF=0]
+|   |   R--- 5 [h=2, BF=1]
+|   |   |   L--- null
+|   |   |   R--- 6 [h=1, BF=0]
+Xoay trai tai 2; T2=3
+ROOT 4 [h=3, BF=0]
+|   L--- 2 [h=2, BF=0]
+|   |   L--- 1 [h=1, BF=0]
+|   |   R--- 3 [h=1, BF=0]
+|   R--- 5 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 6 [h=1, BF=0]
+Chen 7
+Mat can bang RR tai 5
+ROOT 5 [h=3, BF=2]
+|   L--- null
+|   R--- 6 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 7 [h=1, BF=0]
+Xoay trai tai 5; T2=null
+ROOT 4 [h=3, BF=0]
+|   L--- 2 [h=2, BF=0]
+|   |   L--- 1 [h=1, BF=0]
+|   |   R--- 3 [h=1, BF=0]
+|   R--- 6 [h=2, BF=0]
+|   |   L--- 5 [h=1, BF=0]
+|   |   R--- 7 [h=1, BF=0]
+Height AVL=3 BST=7

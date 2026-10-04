@@ -1,0 +1,44 @@
+Dem mot so sanh ba nga moi nut, khong dem NULL; h rong=0.
+Mau n=10 target=17 hBST=10 hAVL=4 cmpBST=9 cmpAVL=3
+ROOT 1
+|   L--- null
+|   R--- 3
+|   |   L--- null
+|   |   R--- 5
+|   |   |   L--- null
+|   |   |   R--- 7
+|   |   |   |   L--- null
+|   |   |   |   R--- 9
+|   |   |   |   |   L--- null
+|   |   |   |   |   R--- 11
+|   |   |   |   |   |   L--- null
+|   |   |   |   |   |   R--- 13
+|   |   |   |   |   |   |   L--- null
+|   |   |   |   |   |   |   R--- 15
+|   |   |   |   |   |   |   |   L--- null
+|   |   |   |   |   |   |   |   R--- 17
+|   |   |   |   |   |   |   |   |   L--- null
+|   |   |   |   |   |   |   |   |   R--- 19
+ROOT 7 [h=4, BF=1]
+|   L--- 3 [h=2, BF=0]
+|   |   L--- 1 [h=1, BF=0]
+|   |   R--- 5 [h=1, BF=0]
+|   R--- 15 [h=3, BF=0]
+|   |   L--- 11 [h=2, BF=0]
+|   |   |   L--- 9 [h=1, BF=0]
+|   |   |   R--- 13 [h=1, BF=0]
+|   |   R--- 17 [h=2, BF=1]
+|   |   |   L--- null
+|   |   |   R--- 19 [h=1, BF=0]
+Tang n=100 target=100 hBST=100 hAVL=7 cmpBST=100 cmpAVL=7
+Khong thay n=100 target=101 hBST=100 hAVL=7 cmpBST=100 cmpAVL=7
+Giam n=100 target=1 hBST=100 hAVL=7 cmpBST=100 cmpAVL=7
+Tron seed=7 n=100 target=100 hBST=13 hAVL=8 cmpBST=5 cmpAVL=7
+Tron seed=42 n=100 target=100 hBST=15 hAVL=8 cmpBST=4 cmpAVL=5
+Tron seed=2026 n=100 target=100 hBST=13 hAVL=8 cmpBST=5 cmpAVL=7
+Tang n=1000 target=1000 hBST=1000 hAVL=10 cmpBST=1000 cmpAVL=10
+Khong thay n=1000 target=1001 hBST=1000 hAVL=10 cmpBST=1000 cmpAVL=10
+Giam n=1000 target=1 hBST=1000 hAVL=10 cmpBST=1000 cmpAVL=10
+Tron seed=7 n=1000 target=1000 hBST=22 hAVL=12 cmpBST=5 cmpAVL=10
+Tron seed=42 n=1000 target=1000 hBST=20 hAVL=12 cmpBST=8 cmpAVL=11
+Tron seed=2026 n=1000 target=1000 hBST=23 hAVL=12 cmpBST=5 cmpAVL=9

@@ -1,0 +1,7 @@
+i=0 value=10 L=1 R=2 Parent=null
+i=1 value=20 L=3 R=4 Parent=0
+i=2 value=30 L=5 R=null Parent=0
+i=3 value=40 L=null R=null Parent=1
+i=4 value=50 L=null R=null Parent=1
+i=5 value=60 L=null R=null Parent=2
+n0=4 n1=2 n2=3 n0=n2+1: 1

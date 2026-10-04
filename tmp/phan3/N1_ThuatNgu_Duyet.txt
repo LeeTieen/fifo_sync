@@ -1,0 +1,27 @@
+ROOT 8
+|   L--- 3
+|   |   L--- 1
+|   |   R--- 6
+|   |   |   L--- 4
+|   |   |   R--- null
+|   R--- 10
+|   |   L--- null
+|   |   R--- 14
+NLR: 8 3 1 6 4 10 14 
+LNR: 1 3 4 6 8 10 14 
+LRN: 1 4 6 3 14 10 8 
+Level: 8 3 10 1 6 14 4 
+NLR stack: 8 3 1 6 4 10 14 
+Muc(4)=4 Height=4 La=3 Hai con=2
+ROOT 1
+|   L--- null
+|   R--- 2
+|   |   L--- null
+|   |   R--- 3
+|   |   |   L--- null
+|   |   |   R--- 4
+NLR: 1 2 3 4 
+LNR: 1 2 3 4 
+LRN: 4 3 2 1 
+Level: 1 2 3 4 
+Height=4

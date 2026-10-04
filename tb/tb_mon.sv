@@ -8,16 +8,7 @@ class monitor;
         this.mbx = mbx;
     endfunction
 
-    task run(
-            bit rst_n,
-            bit rd_en,
-            bit wr_en,
-            bit [DATA_WIDTH-1:0] din,
-
-            bit [DATA_WIDTH-1:0] dout,
-            bit full,
-            bit temp
-        );
+    task run();
         forever begin
             t = new();
             @(posedge vif.clk)
@@ -25,10 +16,10 @@ class monitor;
             t.rd_en = vif.rd_en;
             t.wr_en = vif.wr_en;
             t.din = vif.din;
-            
+            #1ns;
             t.dout = vif.dout;
             t.full = vif.full;
-            t.temp = vif.temp;
+            t.empty = vif.empty;
             mbx.put(t);
 
         end

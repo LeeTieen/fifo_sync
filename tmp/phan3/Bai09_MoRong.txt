@@ -1,0 +1,16 @@
+Gan 5 nhat: 4
+Min=1 Max=14
+Complete=0
+Range [4,10]: 4 6 7 8 10 
+K=4: 6
+Copy dung=1
+Luu/doc giu hinh=1
+Height truoc=7
+Height sau=3 Complete=1
+ROOT 4
+|   L--- 2
+|   |   L--- 1
+|   |   R--- 3
+|   R--- 6
+|   |   L--- 5
+|   |   R--- 7

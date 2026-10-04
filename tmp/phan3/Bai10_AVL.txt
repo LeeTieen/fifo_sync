@@ -1,0 +1,71 @@
+Chen 10
+ROOT 10 [h=1, BF=0]
+Chen 20
+ROOT 10 [h=2, BF=1]
+|   L--- null
+|   R--- 20 [h=1, BF=0]
+Chen 30
+Mat can bang RR tai 10
+ROOT 10 [h=3, BF=2]
+|   L--- null
+|   R--- 20 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 30 [h=1, BF=0]
+Xoay trai tai 10; T2=null
+ROOT 20 [h=2, BF=0]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=1, BF=0]
+Chen 40
+ROOT 20 [h=3, BF=1]
+|   L--- 10 [h=1, BF=0]
+|   R--- 30 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 40 [h=1, BF=0]
+Chen 50
+Mat can bang RR tai 30
+ROOT 30 [h=3, BF=2]
+|   L--- null
+|   R--- 40 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 50 [h=1, BF=0]
+Xoay trai tai 30; T2=null
+ROOT 20 [h=3, BF=1]
+|   L--- 10 [h=1, BF=0]
+|   R--- 40 [h=2, BF=0]
+|   |   L--- 30 [h=1, BF=0]
+|   |   R--- 50 [h=1, BF=0]
+Chen 25
+Mat can bang RL tai 20
+ROOT 20 [h=4, BF=2]
+|   L--- 10 [h=1, BF=0]
+|   R--- 40 [h=3, BF=-1]
+|   |   L--- 30 [h=2, BF=-1]
+|   |   |   L--- 25 [h=1, BF=0]
+|   |   |   R--- null
+|   |   R--- 50 [h=1, BF=0]
+Xoay phai tai 40; T2=null
+Xoay trai tai 20; T2=25
+ROOT 30 [h=3, BF=0]
+|   L--- 20 [h=2, BF=0]
+|   |   L--- 10 [h=1, BF=0]
+|   |   R--- 25 [h=1, BF=0]
+|   R--- 40 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 50 [h=1, BF=0]
+Mat can bang LR tai 25
+ROOT 25 [h=3, BF=-2]
+|   L--- 10 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 15 [h=1, BF=0]
+|   R--- null
+Xoay trai tai 10; T2=null
+Xoay phai tai 25; T2=null
+ROOT 30 [h=3, BF=0]
+|   L--- 15 [h=2, BF=0]
+|   |   L--- 10 [h=1, BF=0]
+|   |   R--- 25 [h=1, BF=0]
+|   R--- 40 [h=2, BF=1]
+|   |   L--- null
+|   |   R--- 50 [h=1, BF=0]
+10 15 25 30 40 50 
+IsAVL=1

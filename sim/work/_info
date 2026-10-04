@@ -1,0 +1,151 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/DV_Course/exercise/PROJECT/FIFO_SYNC/sim
+T_opt
+!s110 1791135149
+VDXcjR>U>BWgACaZb:BR`f0
+04 6 4 work tb_top fast 0
+=1-38a746045ab9-6ac28dac-3de-134ec
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+R0
+Yfifo_inf
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1791135511
+!i10b 1
+!s100 UEX^1MFzVEWSR19mkg`_V0
+ImJ6VQLAg:B7394b04c45R2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_inf_sv_unit
+S1
+R0
+w1790654789
+8../tb/tb_inf.sv
+F../tb/tb_inf.sv
+L0 2
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1791135511.000000
+!s107 ../tb/tb_env.sv|../tb/tb_sco.sv|../tb/tb_mon.sv|../tb/tb_drv.sv|../tb/tb_gen.sv|../tb/tb_trans.sv|../tb/tb_top.sv|../tc/tc_pkg.sv|../tb/tb_pkg.sv|../tb/tb_inf.sv|
+Z7 !s90 -sv|+incdir+../rtl|+incdir+../tb|+incdir+../tc|-f|../compile_tb.f|-l|log/compile_tb.log|
+!i113 0
+Z8 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -sv +incdir+../rtl +incdir+../tb +incdir+../tc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo_sync
+R2
+!s110 1791134203
+!i10b 1
+!s100 jhBIQB`k@NXi3V=?I[8UR3
+IKda6mh<=>ZzEKP2<;FnBc0
+R4
+!s105 fifo_sync_sv_unit
+S1
+R0
+w1791134184
+8../rtl/fifo_sync.sv
+F../rtl/fifo_sync.sv
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1791134203.000000
+!s107 ../tb/tb_env.sv|../tb/tb_sco.sv|../tb/tb_mon.sv|../tb/tb_drv.sv|../tb/tb_gen.sv|../tb/tb_trans.sv|../tb/tb_top.sv|../tc/tc_pkg.sv|../tb/tb_pkg.sv|../tb/tb_inf.sv|../rtl/fifo_sync.sv|
+!s90 -sv|+incdir+../rtl|+incdir+../tb|+incdir+../tc|-f|../compile.f|-l|log/compile.log|
+!i113 0
+R8
+R9
+R1
+Xtb_pkg
+!s115 fifo_inf
+R2
+R3
+!i10b 1
+!s100 PZ?1d6HYlXa4>[]I0c:FJ2
+I7<hN4Ch@kQ]6_bdg5C[IJ2
+V7<hN4Ch@kQ]6_bdg5C[IJ2
+S1
+R0
+w1791135076
+8../tb/tb_pkg.sv
+F../tb/tb_pkg.sv
+F../tb/tb_trans.sv
+F../tb/tb_gen.sv
+F../tb/tb_drv.sv
+F../tb/tb_mon.sv
+F../tb/tb_sco.sv
+F../tb/tb_env.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 ../tb/tb_env.sv|../tb/tb_sco.sv|../tb/tb_mon.sv|../tb/tb_drv.sv|../tb/tb_gen.sv|../tb/tb_trans.sv|../tb/tb_top.sv|../tc/tc_pkg.sv|../tb/tb_pkg.sv|../tb/tb_inf.sv|
+R7
+!i113 0
+R8
+R9
+R1
+vtb_top
+R2
+DXx4 work 6 tb_pkg 0 22 7<hN4Ch@kQ]6_bdg5C[IJ2
+R3
+!i10b 1
+!s100 dW1CciJC_L1XOcS2iaP`z3
+I;]X@?lD[fE>n5NUbb>7_M3
+R4
+!s105 tb_top_sv_unit
+S1
+R0
+w1791135503
+8../tb/tb_top.sv
+F../tb/tb_top.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 0
+R8
+R9
+R1
+Xtc_pkg
+R2
+R3
+!i10b 1
+!s100 ^BYL4HDE;7zVmB_6zTY_Q0
+ITdlBG05WW<a2Ro;4K@cJk1
+VTdlBG05WW<a2Ro;4K@cJk1
+S1
+R0
+w1791132474
+8../tc/tc_pkg.sv
+F../tc/tc_pkg.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 0
+R8
+R9
+R1

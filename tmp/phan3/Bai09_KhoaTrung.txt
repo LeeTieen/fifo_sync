@@ -1,0 +1,7 @@
+3(count=2) 8(count=3) 9(count=2) 10(count=1) 
+Xoa mot lan 8: 3(count=2) 8(count=2) 9(count=2) 10(count=1) 
+Xoa mot lan 8: 3(count=2) 8(count=1) 9(count=2) 10(count=1) 
+Xoa mot lan 8: 3(count=2) 9(count=2) 10(count=1) 
+Xoa mot lan 3: 3(count=1) 9(count=2) 10(count=1) 
+Xoa mot lan 42: 3(count=1) 9(count=2) 10(count=1) 
+Tan suat 9=2

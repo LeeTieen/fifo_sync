@@ -1,7 +1,7 @@
 class transaction;
-    bit                   clk;
-    bit                   rst_n;
-    rand bit                 wr_en;
+    bit                        clk;
+    bit                        rst_n;
+    rand bit                   wr_en;
     rand bit                   rd_en;
     rand bit [DATA_WIDTH-1:0]  din;
 

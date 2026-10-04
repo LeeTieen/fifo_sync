@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+Start time: 00:38:31 on Oct 05,2026
+vlog -sv "+incdir+../rtl" "+incdir+../tb" "+incdir+../tc" -f ../compile_tb.f -l log/compile_tb.log 
+-- Compiling interface fifo_inf
+-- Compiling package tb_pkg
+-- Compiling package tc_pkg
+-- Compiling module tb_top
+-- Importing package tb_pkg
+
+Top level modules:
+	tb_top
+End time: 00:38:31 on Oct 05,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

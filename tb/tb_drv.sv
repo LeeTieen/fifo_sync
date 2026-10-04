@@ -9,12 +9,7 @@ class driver;
     this.mbx = mbx;
   endfunction
 
-  task run(
-      bit                   rst_n,
-      bit                   wr_en,
-      bit                   rd_en,
-      bit [DATA_WIDTH-1:0]  din
-    );
+  task run();
     forever begin
       @(negedge vif.clk)
         mbx.get(t);
