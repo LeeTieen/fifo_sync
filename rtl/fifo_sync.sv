@@ -38,7 +38,7 @@ function automatic logic [PTR_WIDTH-1:0] next_ptr(
 endfunction
 
 always_ff @(posedge clk) begin
-    if (rst_n) begin
+    if (!rst_n) begin
         count   <= '0;
         wr_ptr  <= '0;
         rd_ptr  <= '0;
