@@ -7,5 +7,8 @@ class transaction;
 
     logic [DATA_WIDTH-1:0]   dout;
     logic                    full;
-    logic                    empty;    
+    logic                    empty;
+    
+    logic                    full_before;
+    logic                    empty_before;
 endclass

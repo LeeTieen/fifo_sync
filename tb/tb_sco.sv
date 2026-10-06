@@ -4,9 +4,11 @@ class scoreboard #(
 
   transaction t;
   mailbox mbx;
+  coverage cov;
 
-  function new(mailbox mbx);
+  function new(mailbox mbx, coverage cov);
     this.mbx = mbx;
+    this.cov = cov;
   endfunction
 
   bit [DATA_WIDTH-1:0] expected_dout;
@@ -16,7 +18,7 @@ class scoreboard #(
   bit write;
 
   bit [DATA_WIDTH-1:0] mem[$];
-
+  
   task run();
     forever begin
         mbx.get(t);
@@ -70,6 +72,8 @@ class scoreboard #(
               $error("[SCO]: FAIL full/empty flag check\n");
               $display("Receive: full = %b, empty = %b, expected_full = %b, expected_empty = %b\n", t.full, t.empty, expected_full, expected_empty);
             end
+
+            cov.sample(t);
     end
   endtask
 endclass

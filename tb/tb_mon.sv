@@ -12,6 +12,9 @@ class monitor;
         forever begin
             t = new();
             @(posedge vif.clk)
+            t.full_before  = vif.full;
+            t.empty_before = vif.empty;
+
             t.rst_n = vif.rst_n;
             t.rd_en = vif.rd_en;
             t.wr_en = vif.wr_en;

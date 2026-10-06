@@ -8,9 +8,13 @@ class environment;
     driver drv;
     generator gen;
     event done;
+    coverage cov;
+
+
     virtual fifo_inf #(DATA_WIDTH) vif;
 
     function new();
+        cov = new();
         gdmbx = new();
         msmbx = new();
 
@@ -18,7 +22,7 @@ class environment;
         drv = new(gdmbx);
 
         mon = new(msmbx);
-        sco = new(msmbx);
+        sco = new(msmbx, cov);
     endfunction
   
     task run();

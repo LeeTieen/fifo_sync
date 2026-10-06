@@ -37,6 +37,12 @@ module tb_top;
         test10.test();
 
         $display("TC_10 completed");
+        #1ns;
+        $display("TOTAL COVERAGE: %0.2f%%", env.cov.fifo_cg.get_coverage());
+        $display("COVERAGE OF operation: %0.2f%%", env.cov.fifo_cg.cp_operation.get_coverage());
+        $display("COVERAGE OF state: %0.2f%%", env.cov.fifo_cg.cp_state.get_coverage());
+        $display("COVERAGE OF data: %0.2f%%", env.cov.fifo_cg.cp_data.get_coverage());
+        $display("COVERAGE OF cross op x state: %0.2f%%", env.cov.fifo_cg.operation_state.get_coverage());
         $finish;
     end
 
