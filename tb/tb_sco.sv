@@ -28,14 +28,10 @@ class scoreboard #(
             expected_full = (mem.size() == DEPTH);
             expected_dout = 'b0;
 
-            if((expected_empty == t.empty) && (expected_full == t.full) && (expected_dout == t.dout)) 
-              begin
-                $display("[SCO]: PASS reset\n");
-                $display("Received: expected_dout = %b, dout = %b\n,expected_full = %b, full = %b\n, expected_empty = %b, empty = %b\n",expected_dout, t.dout, expected_full, t.full, expected_empty, t.empty);
-              end
+            assert((expected_empty == t.empty) && (expected_full == t.full) && (expected_dout == t.dout))
             else 
               begin
-                $display("[SCO]: FAIL reset\n");
+                $error("[SCO]: FAIL reset");
                 $display("Received: expected_dout = %b, dout = %b\n,expected_full = %b, full = %b\n, expected_empty = %b, empty = %b\n",expected_dout, t.dout, expected_full, t.full, expected_empty, t.empty);
               end
           end
@@ -49,14 +45,10 @@ class scoreboard #(
             else 
               expected_dout = 'b0;
 
-            if(expected_dout == t.dout)
-              begin
-                  $display("[SCO]: PASS read\n");
-                  $display("Received: expected_dout = %b, dout = %b\n",expected_dout, t.dout);
-              end
+            assert(expected_dout == t.dout)
             else 
               begin
-                  $display("[SCO]: FAIL read\n");
+                  $error("[SCO]: FAIL read");
                   $display("Received: expected_dout = %b, dout = %b\n",expected_dout, t.dout);
               end
                 
@@ -72,15 +64,11 @@ class scoreboard #(
 
         end
 
-          if(t.full == expected_full && t.empty == expected_empty)
+          assert (t.full == expected_full && t.empty == expected_empty) 
+          else   
             begin
-              $display("[SCO]: PASS full/empty flag check\n");
-              $display("Receive: full = %b, empty = %b, expected_full = %b, expected_empty = %b", t.full, t.empty, expected_full, expected_empty);
-            end
-          else
-            begin
-              $display("[SCO]: FAIL full/empty flag check\n");
-              $display("Receive: full = %b, empty = %b, expected_full = %b, expected_empty = %b", t.full, t.empty, expected_full, expected_empty);
+              $error("[SCO]: FAIL full/empty flag check\n");
+              $display("Receive: full = %b, empty = %b, expected_full = %b, expected_empty = %b\n", t.full, t.empty, expected_full, expected_empty);
             end
     end
   endtask

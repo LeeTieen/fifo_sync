@@ -1,8 +1,11 @@
 `timescale 1ns/1ps
 module tb_top;
     import tb_pkg::*;
+    import tc_pkg::*;
     
     environment env;
+    tc_10 test10;
+    
 
     fifo_inf #(.DATA_WIDTH(DATA_WIDTH)) vif();
     fifo_sync #(.DATA_WIDTH(DATA_WIDTH)) dut(
@@ -16,6 +19,7 @@ module tb_top;
         .empty(vif.empty)
     );
 
+    //clock 200MHz
     always #5ns vif.clk = ~vif.clk;
     initial begin
         vif.clk = 0;
@@ -28,15 +32,11 @@ module tb_top;
         env.vif = vif;
         env.run();
 
-        env.gen.tc_01_reset();
-        env.gen.tc_02_write();
-        env.gen.tc_03_full();
+        //Use testcase
+        test10 = new(env);
+        test10.test();
 
-        env.gen.run(1, 0, 0, '0);
-    end
-
-    initial begin
-        #1000;
+        $display("TC_10 completed");
         $finish;
     end
 

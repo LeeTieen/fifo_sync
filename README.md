@@ -9,3 +9,6 @@ The project includes:
 - Driver and monitor
 - Scoreboard
 - Testbench environment
+
+Project behavior and verification expectations are documented in
+[`docs/fifo_spec.md`](docs/fifo_spec.md).

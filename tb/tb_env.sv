@@ -33,5 +33,6 @@ class environment;
             sco.run();
             drv.run();
         join_none
+
     endtask
 endclass

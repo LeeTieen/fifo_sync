@@ -23,26 +23,9 @@ class generator;
             @(done);
     endtask
 
-    task tc_01_reset();
-        $display("FIFO reset");
+    task reset();
         run(0, 0, 0, 'b0);
-        run(0, 1, 0, 8'hA5);
-        run(0, 0, 0, 'b0);
-        run(1, 0, 1, 'b0);
     endtask
 
-    task tc_02_write();
-        $display("FIFO write");
-        run(0, 0, 0, 'b0);
-        run(1, 1, 0, 8'hFA);
-        run(1, 0, 1, 'b0);
-    endtask
 
-    task tc_03_full();
-        $display("FIFO full");
-        for(int i = 0; i < DEPTH; i++) begin
-            run(1, 1, 0, i);
-        end
-        run(1, 1, 0, 8'hFF);
-    endtask
 endclass

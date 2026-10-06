@@ -1,1 +1,6 @@
 /sim/tb_top.vcd
+/sim/log/
+/sim/work/
+/sim/*.wlf
+/sim/*.vcd
+/sim/transcript
