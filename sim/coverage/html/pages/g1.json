@@ -1,0 +1,8 @@
+var g_data = {
+g28:[{dummy:0},
+{name:'fifo_cg',f:1,type:1,id:30,tb:'24',h:'22',m:'2',hp:'91.66%',cov:['95.83%','G'],g:'100.00%',gp:['95.83%','G'],opts:[[],['merge_instance','auto(true)']],parent:'28'}],
+g101:[{dummy:0},
+{name:'fifo_cg',f:1,type:1,id:103,tb:'24',h:'22',m:'2',hp:'91.66%',cov:['95.83%','G'],g:'100.00%',gp:['95.83%','G'],opts:[[],['merge_instance','true']],parent:'101'}],
+dummyEnd:0
+};
+processCovergroupsData(g_data);

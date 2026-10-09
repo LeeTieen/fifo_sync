@@ -1,0 +1,9 @@
+-html
+-htmldir
+coverage/html
+-testhitdataAll
+-code
+bs
+-cvg
+-assert
+coverage.ucdb

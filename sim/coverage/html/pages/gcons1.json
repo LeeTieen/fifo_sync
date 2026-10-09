@@ -1,0 +1,5 @@
+var g_db_data = [
+{dummy:0},
+{name:'fifo_cg',f:1,type:6,id:30,tb:'24',h:'22',m:'2',hp:'91.66%',cov:['95.83%','G'],g:'100.00%',gp:['95.83%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/tb_pkg/coverage',parent:'28'},
+{name:'fifo_cg',f:1,type:6,id:103,tb:'24',h:'22',m:'2',hp:'91.66%',cov:['95.83%','G'],g:'100.00%',gp:['95.83%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.tb_pkg::coverage',parent:'101'}];
+processConsCovergroupsData(g_db_data);
