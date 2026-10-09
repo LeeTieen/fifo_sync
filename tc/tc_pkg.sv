@@ -1,5 +1,7 @@
 package tc_pkg;
     import tb_pkg::*;
+
+    `include "tc_00.sv"
     `include "tc_01.sv"
     `include "tc_02.sv"
     `include "tc_03.sv"
