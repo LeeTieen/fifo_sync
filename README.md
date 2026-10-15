@@ -38,3 +38,7 @@ FIFO_SYNC/
 └── README.md
 ```
 
+
+See the [FIFO specification](docs/fifo_spec.md),
+[saved coverage report](sv/sim/coverage/html/index.html).
+
