@@ -1,14 +1,40 @@
 # fifo_sync
-This project presents the design and verification of a simple synchronous FIFO buffer using SystemVerilog.
 
-The project includes:
+Design and verification of a simple synchronous FIFO buffer.
 
-- FIFO RTL design
-- SystemVerilog interface
-- Transaction and generator
-- Driver and monitor
-- Scoreboard
-- Testbench environment
+The repository contains two verification versions:
 
-Project behavior and verification expectations are documented in
-[`docs/fifo_spec.md`](docs/fifo_spec.md).
+| Folder | Contents | Status |
+|---|---|---|
+| [`sv/`](sv/) | Original SystemVerilog design, testbench, testcases, and coverage report | Existing implementation |
+| [`uvm/`](uvm/) | UVM mapping of the FIFO verification environment | Initial implementation; reset/idle sequence |
+
+```text
+FIFO_SYNC/
+├── docs/
+│   └── fifo_spec.md
+├── sv/
+│   ├── rtl/
+│   ├── tb/
+│   ├── tc/
+│   ├── sim/
+│   ├── Makefile
+│   ├── config.mk
+│   ├── compile.f
+│   ├── compile_tb.f
+│   └── README.md
+├── uvm/
+│   ├── rtl/
+│   ├── tb/
+│   ├── tc/
+│   ├── sim/
+│   ├── Makefile
+│   ├── config.mk
+│   ├── compile.f
+│   ├── compile_tb.f
+│   └── README.md
+├── .gitattributes
+├── .gitignore
+└── README.md
+```
+

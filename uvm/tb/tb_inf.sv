@@ -8,7 +8,8 @@ interface fifo_inf #(
     logic                   rd_en;
     logic [DATA_WIDTH-1:0]  din;
 
-    logic [DATA_WIDTH-1:0]   dout;
-    logic                    full;
-    logic                    empty;    
+    logic [DATA_WIDTH-1:0]  dout;
+    logic                   full;
+    logic                   empty;    
 endinterface
+

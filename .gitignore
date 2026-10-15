@@ -1,6 +1,20 @@
-/sim/tb_top.vcd
-/sim/log/
-/sim/work/
-/sim/*.wlf
-/sim/*.vcd
-/sim/transcript
+# Generated simulation outputs for both verification versions.
+/sv/sim/log/
+/sv/sim/work/
+/sv/sim/*.wlf
+/sv/sim/*.vcd
+/sv/sim/*.ucdb
+/sv/sim/*.log
+/sv/sim/modelsim.ini
+/sv/sim/transcript
+/sv/sim/coverage/*.txt
+
+/uvm/sim/log/
+/uvm/sim/work/
+/uvm/sim/*.wlf
+/uvm/sim/*.vcd
+/uvm/sim/*.ucdb
+/uvm/sim/*.log
+/uvm/sim/modelsim.ini
+/uvm/sim/transcript
+/uvm/sim/coverage/*.txt

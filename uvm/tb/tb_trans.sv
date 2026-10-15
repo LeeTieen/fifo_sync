@@ -1,0 +1,24 @@
+class transaction extends uvm_sequence_item;  
+
+  //Utility macro
+  `uvm_object_utils(transaction)  
+
+  //Constructor
+  function new(string name = "transaction");
+    super.new(name);
+  endfunction
+
+    bit                        clk;
+    bit                        rst_n;
+    rand bit                   wr_en;
+    rand bit                   rd_en;
+    rand bit [DATA_WIDTH-1:0]  din;
+
+    logic    [DATA_WIDTH-1:0]  dout;
+    logic                      full;
+    logic                      empty;
+    
+    logic                      full_before;
+    logic                      empty_before;
+
+endclass
